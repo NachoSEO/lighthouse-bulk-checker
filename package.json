@@ -1,0 +1,11 @@
+{
+  "name": "lighthouse-bulk-checker",
+  "version": "1.0.0",
+  "description": "A tool to perform lighthouse reports in bulk",
+  "main": "index.js",
+  "author": "Nacho Mascort <nacho.mascort@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lighthouse": "^7.3.0"
+  }
+}
