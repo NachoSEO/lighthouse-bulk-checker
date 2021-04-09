@@ -3,13 +3,18 @@ Perform lighthouse reports in bulk with this NodeJS script.
 
 ## Getting started
 1. Download the repo
-2. Install dependencies `sh npm install` or ` yarn`
+2. Install dependencies `npm install` or ` yarn`
 3. Add the urls you want to check as an array in this file `config/urls.js`
 4. (Optional) Add the config you want to test in `config/options.js`. More info [here](https://github.com/GoogleChrome/lighthouse/blob/master/docs/configuration.md)
 5. Run `node index.js`
 
 ## Reports
-When you run the script a report will be created when teh script finishes its execution.
+When you run the script a report will be created when the script finishes its execution.
+
+IMPORTANT: 
+* The script uses lab data from the options that you pass to lighthouse to be emulated
+* The output report filename is the current date + lighthouseReport.json (i.e. 09-04-2021-lighthouseReport.json)
+* The report is a JSON file
 
 The metrics that we are currently tracking for desktop & mobile devices are:
 * Lighthouse score
