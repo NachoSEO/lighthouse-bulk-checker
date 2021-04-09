@@ -12,9 +12,7 @@ class LighthouseRepository {
 
     return {
       lighthouse: runnerResult.lhr.categories.performance.score * 100,
-      cls: runnerResult.lhr.audits['cumulative-layout-shift'].numericValue,
-      lcp: 'tbd',
-      fid: runnerResult.lhr.audits['max-potential-fid'].score
+      report: runnerResult.lhr
     }
   }
 }

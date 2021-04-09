@@ -1,4 +1,5 @@
 module.exports = { 
   logLevel: 'info',
-  onlyCategories: ['performance']
+  onlyCategories: ['performance'],
+  output: 'json'
 };
